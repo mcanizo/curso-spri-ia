@@ -1,5 +1,5 @@
 # SPRI AI for Industry 4.0. 2020 course
-Code for SPRI AI for Industry 4.0. 2020 course.
+[![MlFLOW](img/mlflow-logo.png)](https://mlflow.org) Code for SPRI AI for Industry 4.0. 2020 course.
 
 This code has been updated to use latest versions of all the components on november 2020.
 
@@ -15,6 +15,9 @@ Follow these steps to build the MLflow Tracking Server:
 5. Open MinIO at at http://your-docker-machine-ip:9000
 6. Within MinIO, create a new bucket named ``mlflow-bucket``
 5. Enjoy!
+
+
+![MLflow Tracking SErver](img/MLflow_architecture.png)
 
 
 ## Track your models with MLflow
