@@ -1,0 +1,10 @@
+name: iris_example
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      kernel: {type: string, default: "linear"}
+      C: {type: float, default: 0.5}
+    command: "python train_iris.py {kernel} {C}"
