@@ -1,5 +1,7 @@
+[![MlFLOW](img/mlflow-logo.png)](https://mlflow.org)
+
 # SPRI AI for Industry 4.0. 2020 course
-[![MlFLOW](img/mlflow-logo.png)](https://mlflow.org) Code for SPRI AI for Industry 4.0. 2020 course.
+Code for SPRI AI for Industry 4.0. 2020 course.
 
 This code has been updated to use latest versions of all the components on november 2020.
 
