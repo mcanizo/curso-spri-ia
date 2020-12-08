@@ -9,5 +9,5 @@ RUN pip install boto3 \
  && pip install numpy \
  && pip install pandas \
  && pip install scikit-learn \
- && pip install mlflow==1.10.0 \
+ && pip install mlflow==1.12.1 \
  && pip install h5py
