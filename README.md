@@ -45,4 +45,4 @@ set the following varibales within the file (the same as in the ``docker-compose
 - ``MLFLOW_S3_ENDPOINT_URL=http://localhost:9000``
 - ``MLFLOW_TRACKING_URI=http://localhost:80``
 
-**Note**: this credentials are only for the tuorial. You may change them in a production scenario.
+**Note**: These credentials are only for the tuorial. You may change them in a production scenario.
