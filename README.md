@@ -33,16 +33,16 @@ $ pip install --upgrade pip
 $ pip install -r requirements.txt
 ```
 
-Set enviromental variables to define the credentials to be able to acces the MinIO repository to store your models:
+Set environmental variables to define the credentials to be able to access the MinIO repository to store your models:
 
 ```
 $ sudo nano /etc/environment
 ```
 
-set the following varibales within the file (the same as in the ``docker-compose.yml``):
+Set the following varibales within the file (the same as in the ``docker-compose.yml``):
 - ``AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE``
 - ``AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY``
 - ``MLFLOW_S3_ENDPOINT_URL=http://localhost:9000``
 - ``MLFLOW_TRACKING_URI=http://localhost:80``
 
-**Note**: These credentials are only for the tuorial. You may change them in a production scenario.
+**Note**: These credentials are only for the tutorial. You may change them in a production scenario.
