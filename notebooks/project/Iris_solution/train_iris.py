@@ -63,6 +63,7 @@ if __name__ == "__main__":
     C = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
 
     with mlflow.start_run():
+        mlflow.set_experiment('iris_svm_project')
         svm = SVC(C=C, kernel=kernel, random_state=42)
         svm.fit(train_x, train_y)
 
