@@ -9,3 +9,5 @@ dependencies:
   - pip
   - pip:
     - mlflow>=1.0
+    - boto3
+
