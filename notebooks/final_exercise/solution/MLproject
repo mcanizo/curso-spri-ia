@@ -1,0 +1,10 @@
+name: randomForest_banknote
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_estimators: {type: string, default: "50,100"}
+      max_depth: {type: string, default: "2,5"}
+    command: "python randomForest_train_autolog.py {n_estimators} {max_depth}"
