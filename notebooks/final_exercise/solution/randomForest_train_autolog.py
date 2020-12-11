@@ -62,7 +62,6 @@ if __name__ == "__main__":
 
     parameters = {'n_estimators': n_stimators_list, 'max_depth': max_depth_list}
 
-    mlflow.set_experiment('randomForest_banknote_autolog')
     mlflow.sklearn.autolog()
 
     rf = RandomForestClassifier()
