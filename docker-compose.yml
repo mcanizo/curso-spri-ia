@@ -26,18 +26,19 @@ services:
         restart: always
         ports:
             - "9000:9000"
+            - "9001:9001"
         networks:
             - backend
         volumes:
             - ./docker/data/s3:/data #use it on linux
         environment:
-            MINIO_ACCESS_KEY: "AKIAIOSFODNN7EXAMPLE"
-            MINIO_SECRET_KEY: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+            MINIO_ROOT_USER: "AKIAIOSFODNN7EXAMPLE"
+            MINIO_ROOT_PASSWORD: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
         logging:
            options:
              max-size: 10m
              max-file: "3"
-        command: server --address 0.0.0.0:9000 /data
+        command: server  --console-address ":9001" --address 0.0.0.0:9000 /data
 
     web:
         restart: always
